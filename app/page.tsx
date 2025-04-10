@@ -2,12 +2,10 @@
 
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function Home() {
-  const { theme } = useTheme();
   const [typedText, setTypedText] = useState("");
   const [buttonVisible, setButtonVisible] = useState(false);
 
